@@ -1,5 +1,26 @@
-body {
-  margin: 0;
+@import 'common/fonts';
+
+html {
+	height: 100%;
 }
 
-@import 'common/greating';
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/water_sr.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+@import 'common/button_sign';
+
+@import 'common/about';
+@import 'common/nav';
+
+@import 'common/footer';
+
+

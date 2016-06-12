@@ -1,0 +1,16 @@
+.footer {
+  height: 55px; // фиксированая высота футера 
+  text-align: center;
+  @include fonts(16px, 'Roboto-Regular');
+ }
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -55px; // Равно высоте футера\
+}
+
+.wrapper:after {
+  content: '';
+  display: block;
+  height: 55px; // Равно высоте футера
+}

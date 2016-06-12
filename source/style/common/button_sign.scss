@@ -1,0 +1,27 @@
+.conteiner {
+	position: relative;
+}
+
+.button_sign {
+	height: 42px;
+	width: 178px;
+	border-radius: 11%/50%;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	border: solid 1px #fff;
+	@include fonts(16px, 'Roboto-Medium');
+
+	&:hover {
+		background-color: #4e8839;
+		cursor: pointer;
+		border: none;
+	}
+
+	&__text {
+		position: absolute;
+		top: 9px;
+		right: 27px;
+	}
+}

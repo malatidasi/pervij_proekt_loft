@@ -1,0 +1,38 @@
+.conteiner {
+	padding-top: 120px;
+}
+
+.about {
+	height: 395px;
+	width: 380px;
+	background-color: rgba(18,38,32,0.6);
+	margin: auto;
+}
+
+.about__foto {
+	margin-top: 20px;
+	height: 142px;
+	width: 140px;
+	border-radius: 50% 50%;
+	background: url(../img/foto.jpg);
+	background-size: cover;
+    background-position: 0 -28px;
+    margin: 0 auto;
+}
+
+.about__name {
+	@include fonts(28px, 'Roboto-Medium');
+	margin-top: 10px;
+}
+
+.about__prof {
+	@include fonts(16px, 'Roboto-Regular');
+	margin-top: 10px;
+}
+
+.about__contakts {
+	width: 150px;
+	height: 29px;
+	background: #fff;
+	margin: 40px auto;
+}
