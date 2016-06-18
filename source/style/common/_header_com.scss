@@ -5,6 +5,10 @@
 	position: relative;
 }
 
+.header_name {
+	height: 600px;
+}
+
 .ikons_header {
 	position: absolute;
 	top: 33px;
@@ -12,13 +16,15 @@
 }
 
 .about__cont-com {
-	height: 100%;
-	width: 100%;
-	position: relative;
+	top: 80px;
 }
 
-.about__cont-com {
-	top: 80px;
+.about__cont-name {
+	top: 152px;
+}
+
+.about-com__myName {
+	top: 155px;
 }
 
 .about__foto-com {
@@ -26,14 +32,22 @@
 }
 
 .about-com__title {
-	height: 75px;
 	@include titles(63px, 30px);
+	// height: 75px;
 	//143 background: url("$adres") no-repeat center center scroll;
 	position: absolute;
 	top: 157px;
 	left: 50%;
 	margin-left: -63px;
 	text-transform: uppercase;
+}
+
+.about-com__name {
+	@include fonts(35px, 'Roboto-Medium');
+	position: absolute;
+	top: 157px;
+	left: 50%;
+	margin-left: -200px;
 }
 
 .about-com__line {
@@ -50,8 +64,11 @@
 	position: absolute;
 	top: 277px;
 	@include fonts(16px, 'Roboto-Regular');
-	left: 50%;
-	margin-left: -101px;
+	width: 100%;
+}
+
+.about-com__opisanie-prof {
+	top: 213px;
 }
 
 
@@ -74,13 +91,21 @@
 
 // ipad
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-	.header {
-		height: 504px;
+	.header, .header_name {
+		height: 505px;
 	}
 
-	.about__cont-com {
+	.about__cont-com, .about__cont-name {
 	top: 116px;
 	}
+
+.about-com__name {
+	top: 171px;
+}
+
+.about-com__opisanie-prof {
+	top: 211px;
+}
 }
 
 

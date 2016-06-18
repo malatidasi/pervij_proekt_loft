@@ -1,0 +1,12 @@
+mixin heading(title, opisanie)
+  .body.header.header_name
+   .ikons_header
+      include _ikons_com
+    include _menu
+    .about__cont_foto.about__cont-name
+           .about__foto.about__foto-com
+           .about-com__name= title
+           .about-com__opisanie.about-com__opisanie-prof= opisanie
+
+
++heading('Преображенская Мария', 'Личный сайт веб разработчика')
