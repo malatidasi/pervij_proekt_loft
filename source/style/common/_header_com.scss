@@ -32,9 +32,10 @@
 }
 
 .about-com__title {
-	@include titles(63px, 30px);
+	@include titles(63px);
 	// height: 75px;
 	//143 background: url("$adres") no-repeat center center scroll;
+	color: #fff;
 	position: absolute;
 	top: 157px;
 	left: 50%;

@@ -1,0 +1,94 @@
+.works {
+	width: 100%;
+} 
+
+.w__title {
+	@include titles(63px);
+}
+.w__titleLine {
+	height: 3px;
+	width: 89px;
+	background-color: #373e42;
+	margin: 31px auto 35px;
+
+}
+
+
+.w_blur {
+	height: 750px;
+	width: 100%;
+	font-size: 0px;
+}
+
+.w__blur__part {
+	width: 50%;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.w__blur__partInfo {
+	background-color: #ebefe2;
+	position: relative;
+
+}
+
+.w__blur__Info {
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	margin-left: -159px;
+}
+
+.w__blur__InfoTitle {
+	@include fonts (35px,'Webissimo-Regular');
+	color: #373e42;
+	text-transform: uppercase;
+}
+
+.w__blur__InfoLine{
+	background-color: #566358;
+	margin-bottom: 27px;
+}
+
+.w__opisanie {
+	@include fonts (16px,'Roboto-Regular');
+	color: #4e8839;
+}
+
+
+.w__button {
+	position: absolute;
+	top: 200px;
+	right: 50%;
+	margin-right: -89px;
+	background-color: #6c9c5a;
+}
+
+.w__blur__partSlides {
+	background-color: #e1e4d7;
+}
+
+.w__blurSlide {
+	height: 525px;
+	width: 100%;
+	display: block;
+}
+
+.w__blurNav {
+	width: 100%;
+	height: 225px;
+	display: block;
+		font-size: 0px;
+}
+
+.w__blurNav_part {
+	width: 50%;
+	display: inline-block;
+	height: 100%;
+}
+
+.w__otzovi {
+	height: 1355px;
+	width: 100%;
+}

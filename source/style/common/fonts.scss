@@ -48,10 +48,9 @@
 	text-align: center;
 }
 
-@mixin titles($fsize, $marg) {
+@mixin titles($fsize) {
 	font-size: $fsize;
-	margin-bottom: $marg;
-	color: #fff;
+	color: #373e42;
 	text-align: center;
 	font-family: 'Webissimo-Regular';
 }
