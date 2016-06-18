@@ -1,0 +1,97 @@
+.header {
+	width: 100%;
+	height: 435px;
+	background-attachment: scroll;
+	position: relative;
+}
+
+.ikons_header {
+	position: absolute;
+	top: 33px;
+	left: 30px;
+}
+
+.about__cont-com {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.about__cont-com {
+	top: 80px;
+}
+
+.about__foto-com {
+	top:0;
+}
+
+.about-com__title {
+	height: 75px;
+	@include titles(63px, 30px);
+	//143 background: url("$adres") no-repeat center center scroll;
+	position: absolute;
+	top: 157px;
+	left: 50%;
+	margin-left: -63px;
+	text-transform: uppercase;
+}
+
+.about-com__line {
+	height: 3px;
+	width: 89px;
+	background-color: #FFF;
+	position: absolute;
+	top: 248px;
+	left: 50%;
+	margin-left: -47px;
+}
+
+.about-com__opisanie {
+	position: absolute;
+	top: 277px;
+	@include fonts(16px, 'Roboto-Regular');
+	left: 50%;
+	margin-left: -101px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// desctop 1200
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+	.header {
+
+	}
+}
+
+// ipad
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.header {
+		height: 504px;
+	}
+
+	.about__cont-com {
+	top: 116px;
+	}
+}
+
+
+//iphone
+@media screen and (max-width: 767px) {
+	.header {
+		height: 558px;
+	}
+
+	.about__cont-com {
+	top: 116px;
+	}
+}
+

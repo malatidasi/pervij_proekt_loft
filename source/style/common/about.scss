@@ -7,17 +7,28 @@
 	width: 380px;
 	background-color: rgba(18,38,32,0.6);
 	margin: auto;
+	border-radius: 5px;
 }
 
+.about__cont_foto {
+	height: 182px;
+	width: 100%;
+	position: relative;
+}
+
+
 .about__foto {
-	margin-top: 20px;
 	height: 142px;
 	width: 140px;
 	border-radius: 50% 50%;
 	background: url(../img/foto.jpg);
 	background-size: cover;
     background-position: 0 -28px;
-    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-right: -70px;
+
 }
 
 .about__name {
@@ -27,12 +38,56 @@
 
 .about__prof {
 	@include fonts(16px, 'Roboto-Regular');
-	margin-top: 10px;
+	margin-top: 2px;
 }
 
 .about__contakts {
 	width: 150px;
 	height: 29px;
 	background: #fff;
-	margin: 40px auto;
+	margin: 32px auto 37px;
+}
+
+
+// desctop 1800+
+@media screen and (min-width: 1800px) {
+  .conteiner {
+	padding-top: 248px;
+	}
+}
+
+// ipad
+@media screen and (min-width: 767px) and (max-width: 1199px) and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .conteiner {
+	padding-top: 277px;
+	}
+}
+
+
+// Iphones
+@media screen and (max-width: 766px) {
+  .conteiner {
+	padding-top: 85px;
+	}
+
+ .about {
+  	width: 300px;
+  }
+
+  .about__name {
+	@include fonts(21px, 'Roboto-Medium');
+	margin-top: 25px;
+	}
+
+.about__prof {
+	@include fonts(14px, 'Roboto-Regular');
+	margin-top: 8px;
+	}
+}
+
+@media screen and (max-height: 550px) {
+	.about {
+		margin-bottom: 25px;
+	}
 }

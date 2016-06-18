@@ -5,22 +5,39 @@ html {
 }
 
 body {
+  background-color: #faf8f0;
   margin: 0;
   height: 100%;
   width: 100%;
+
+}
+.body {
   background: url(../img/water_sr.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
+// header_com
+@import 'common/_header_com';
+
 
 @import 'common/button_sign';
 
 @import 'common/about';
 @import 'common/nav';
 
+// navigation
+@import 'common/_nav_com';
+
+// ikons
+@import 'common/_ikons_com';
+
+// blog/articles
+@import 'common/_articles';
+
+// footers
 @import 'common/footer';
+@import 'common/footer_com';
 
 

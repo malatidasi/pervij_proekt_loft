@@ -1,0 +1,197 @@
+.footer_com {
+  height: 184px; // фиксированая высота футера 
+ }
+
+.wrapper_com {
+  min-height: 100%;
+  margin-bottom: -184px; // Равно высоте футера\
+}
+
+.wrapper_com:after {
+  content: '';
+  display: block;
+  height: 184px; // Равно высоте футера
+}
+
+.footer_com__up {
+	background-color: #545a5c;
+	width: 100%;
+	height: 148px;
+	position: relative;
+}
+
+
+.footer_com__block-2blocks {
+	width: 66.6%;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	font-size: 0;
+}
+
+.footer_com__block {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	height: 87px;
+	position: relative;
+}
+
+.footer_com__block-big {
+	width: 33.3%;
+	position: absolute;
+	right: 0px;
+	top: 30px;
+}
+
+.footer_com__block-line1, .footer_com__block-line2 {
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	right: 0px;
+	top: 0px;
+	background-color: #767b7d;
+}
+
+.fonts_light {
+	@include fonts(16px, 'Roboto-Light');
+}
+
+.fonts_opas {
+	opacity: 0.85;
+}
+
+.fonts_bold {
+	@include fonts(16px, 'Roboto-Bold');	
+}
+
+.footer_com__block-text {
+	display: block;
+	text-align: left;
+	margin-left: 33px;
+}
+
+.footer_com__text_marg_down {
+	margin-bottom: 10px;
+}
+
+.footer_com__down {
+	background-color: #90a972;
+	height: 36px;
+	line-height: 36px;
+	width: 100%;
+	@include fonts(16px, 'Roboto-Light');
+}
+
+.footer_com__down_text {
+	display: inline-block;
+}
+
+
+@media screen and (max-width: 1199px) {
+	.footer_com__down {
+		@include fonts(14px, 'Roboto-Light');
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.footer_com {
+  		height: 271px; // фиксированая высота футера 
+ }
+
+.wrapper_com {
+  		min-height: 100%;
+  		margin-bottom: -271px; // Равно высоте футера\
+}
+
+.wrapper_com:after {
+  height: 271px; // Равно высоте футера
+}
+
+.footer_com__up {
+	height: 235px;
+
+}
+
+.footer_com__block-2blocks {
+	width: 100%;
+}
+
+	.footer_com__block-line2 {
+		display: none;
+	}
+
+	.footer_com__block-big {
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 146px;
+	}
+
+
+.footer_com__up {
+	position: relative;
+}
+.footer_com__cont {
+	width: 100%;
+	position: absolute;
+	top: 30px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+	.footer_com {
+  		height: 347px; // фиксированая высота футера 
+ }
+
+.wrapper_com {
+  		min-height: 100%;
+  		margin-bottom: -347px; // Равно высоте футера\
+}
+
+.wrapper_com:after {
+  height: 347px; // Равно высоте футера
+}
+
+.footer_com__up {
+	height: 289px;
+}
+
+.footer_com__block-2blocks, .footer_com__block-big {
+	position: static;
+	width: 100%;
+}
+
+	.footer_com__block {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+.footer_com__block-text {
+	text-align: center;
+	margin: 0;
+}
+
+.footer_com__down {
+	height: 58px;
+}
+
+.footer_com__down_text {
+	display: inline-block;	
+	height: 29px;
+}
+
+.footer__text-hide {
+	display: none;
+}
+
+.ikons_block {
+	position: absolute;
+	margin-left: -73px;
+	left: 50%;
+}
+
+
+}

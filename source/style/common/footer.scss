@@ -1,16 +1,41 @@
 .footer {
-  height: 55px; // фиксированая высота футера 
-  text-align: center;
+  height: 62px; // фиксированая высота футера 
   @include fonts(16px, 'Roboto-Regular');
  }
 
 .wrapper {
   min-height: 100%;
-  margin-bottom: -55px; // Равно высоте футера\
+  margin-bottom: -62px; // Равно высоте футера\
 }
 
 .wrapper:after {
   content: '';
   display: block;
-  height: 55px; // Равно высоте футера
+  height: 62px; // Равно высоте футера
+}
+.footer__text {
+	display: inline-block;
+}
+
+@media screen and (max-width: 766px) {
+.footer {
+  height: 50px; // фиксированая высота футера 
+  @include fonts (14px, 'Roboto-Light');
+ }
+
+ .footer__text {
+ 	display: block;
+ }
+
+ .footer__text-hide {
+ 	display: none;
+ }
+
+.wrapper:after {
+	height: 50px;
+}
+.wrapper {
+	margin-bottom: -50px;
+}
+
 }

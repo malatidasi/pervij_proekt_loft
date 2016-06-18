@@ -14,7 +14,7 @@
 	@include fonts(16px, 'Roboto-Medium');
 
 	&:hover {
-		background-color: #4e8839;
+		background-color: #477d38;
 		cursor: pointer;
 		border: none;
 	}
@@ -23,5 +23,20 @@
 		position: absolute;
 		top: 9px;
 		right: 27px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  .button_sign{
+	  top: 10px;
+	  left: 50%;
+	  margin-left: -89px;
+	}
+}
+
+@media screen and (max-min: 1800px) {
+  .button_sign{
+	  top: 25px;
+	  left: 100px;
 	}
 }

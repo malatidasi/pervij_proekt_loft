@@ -1,7 +1,7 @@
 doctype html
 html
   include common/_head
-  body
+  body.body
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
@@ -11,13 +11,17 @@ html
        .button_sign__text Авторизоваться
 
       .about
-          .about__foto 
+          .about__cont_foto
+           .about__foto 
           .about__name Преображенская Мария
           .about__prof Личный сайт веб-разработчика
           .about__contakts
           .nav
+            .nav__my-sites.nav__ Мои работы
+            .nav__me.nav__ Обо мне
+            .nav__blog.nav__ Блог
 
 
 
-footer.footer © Преображенская Мария | создано с любовью в LoftSchool | 2016
+include common/_footer
 
