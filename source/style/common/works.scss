@@ -2,6 +2,10 @@
 	width: 100%;
 } 
 
+.works_bg {
+	background: #f4f5f0;
+}
+
 .w__title {
 	@include titles(63px);
 }
@@ -10,7 +14,6 @@
 	width: 89px;
 	background-color: #373e42;
 	margin: 31px auto 35px;
-
 }
 
 
@@ -73,6 +76,11 @@
 	height: 525px;
 	width: 100%;
 	display: block;
+	background: url(../img/big_w.png) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .w__blurNav {
@@ -88,7 +96,113 @@
 	height: 100%;
 }
 
+.w__blurNav_pDown {
+  background: url(../img/down.jpg) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.w__blurNav_pUp {
+  background: url(../img/up.jpg) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 .w__otzovi {
-	height: 1355px;
+	margin-top: 90px;
+	// height: 1355px;
 	width: 100%;
+	background: url(../img/works_bg.jpg) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.w_otzovi__conten {
+	width: 100%;
+	height: 100%;
+}
+
+.w_otzovi__title {	
+	@include titles(63px);
+	width: 339px;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+
+.w_otzovi__line {
+	margin: 40px auto 30px;
+}
+
+.w__otzovi_otzovi {
+	width: 740px;
+	margin: 0 auto;
+	font-size: 0px;
+	margin-bottom: 70px;
+}
+
+.w__otz_otzPart {
+	width: 50%;
+	display: inline-block;
+}
+
+.w__otz_foto {
+	height: 77px;
+	width: 77px;
+	border-radius: 50% 50%;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+.w__otz_foto-1 {	
+	background: url(../img/foto_otziv.jpg);
+	background-position: 0px -18px;
+}
+
+.w__otz_foto-2 {	
+	background: url(../img/foto_otziv.jpg);
+	background-position: 0px -142px;
+}
+
+.w__otz_text {
+	@include fonts(16px,'Roboto-Italic');
+	color: #5d5a55;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.w__otz_name {
+	@include fonts(16px,'Roboto-Bold');
+	color: #4e8839;
+	margin-bottom: 10px;
+}
+
+.w__otz_dolzhnost {
+	@include fonts(16px,'Roboto-Italic');
+	color: #373e42;
+}
+
+.w_kontFotm {
+	background-color: rgba(#e0e0dc, 0.6);
+	width: 380px;
+	height: 460px;
+	margin: 0 auto 69px;
+}
+
+
+
+
+
+.w_up {
+	height: 16px;
+	width: 26px;
+	margin: 0 auto 72px;
+	background-color: #FFF;
 }

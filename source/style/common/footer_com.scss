@@ -13,6 +13,12 @@
 //   height: 184px; // Равно высоте футера
 // }
 
+.w_otzovi__conten:after {
+  content: '';
+  display: block;
+  height: 184px; // Равно высоте футера
+}
+
 .footer_com__up {
 	background-color: rgba(#545a5c,0.85);
 	width: 100%;
@@ -104,9 +110,10 @@
   		margin-bottom: -271px; // Равно высоте футера\
 }
 
-.wrapper_com:after {
+.articles:after, .w_otzovi__conten:after {
   height: 271px; // Равно высоте футера
 }
+
 
 .footer_com__up {
 	height: 235px;
@@ -150,7 +157,7 @@
   		margin-bottom: -347px; // Равно высоте футера\
 }
 
-.wrapper_com:after {
+.articles:after, .w_otzovi__conten:after {
   height: 347px; // Равно высоте футера
 }
 
