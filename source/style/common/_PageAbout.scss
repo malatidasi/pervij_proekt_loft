@@ -1,14 +1,139 @@
 .p_aboutInfo {
 	width: 100%;
-	font-size: 0px;
 	height: 836px;
+	font-size: 0px;
+
+	box-sizing: border-box;
 }
+
 
 .p_aboutInfo_item {
 	width: 50%;
 	display: inline-block;
+	height: 100%;	
+	font-size: 0px;
+	box-sizing: border-box;
 }
 
-.p_aboutInfo-blur {
+.p_aboutInfo-text {
+	background-color: #ebefe2;
+	float: left;
+}
 
+.p_about_text {
+	display: inline-block;
+	width: 50%;
+
+	vertical-align: top;
+}
+
+.p_aboutInfo-title {
+	vertical-align: top;
+}
+
+.p_about-title {
+	margin: 0;
+
+}
+
+.p_about-line {
+	margin-top: 20px;
+}
+
+.p_about-Biogr {
+}
+
+.p_about_foto {
+	background-image: url("../img/foto.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 390px;
+}
+
+.p_about_text {
+@include fonts(35px, 'Webissimo-Regular');
+text-transform: uppercase;
+color: #566358;
+margin: auto;
+}
+
+.p_BiogrLine {
+	background-color: #566358;
+}
+
+.p_oboMneParagraf {
+	@include fonts (16px, 'Roboto-Regular');
+	text-align: left;
+	color: #566358;
+	text-transform: none;
+
+}
+
+
+
+
+
+
+
+
+.p_aboutInfo-blur {
+	color: #f4f5f0;
+	padding-left: 40px;
+	padding-right: 60px;
+	box-sizing: border-box;
+}
+
+
+.p_skils {
+	width: 100%;
+	height: 163px;
+	margin-top: 60px;
+
+}
+
+.p_skils_title {
+	@include fonts (28px, 'Roboto-Medium');
+	color: #566358;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.p_skils_oneDiagram {
+	position: relative;
+	height: 120px;
+	width: 120px;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.p_diagram-text{
+	@include fonts (14px, 'Roboto-Medium');
+	color: #4e8839;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 60px;
+}
+
+.p_aboutKarta {
+	width: 100%;
+	height: 1000px;
+}
+
+circle {
+	fill: rgba(0,0,0,0);
+	stroke: #dfdcd5;
+	stroke-width:20;
+	stroke-dasharray: 314px 314px;
+	transition: stroke-dasharray 0.8s;
+}
+
+.circle1 {
+	fill: rgba(0,0,0,0);
+	stroke: #74a163;
+	stroke-width:20;
+	stroke-dasharray: 250px 314px;
+	transition: stroke-dasharray 0.8s;
+	stroke-dasharray:25px 314px;
 }
