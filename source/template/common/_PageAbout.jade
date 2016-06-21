@@ -5,7 +5,7 @@ main.p_aboutInfo.clearfix
            .w__titleLine.p_about-line
         .p_about_text.p_about-Biogr
             .p_about_foto
-            .p_about_text Кто я
+            .p_about_titileSmall Кто я
             .w__titleLine.p_BiogrLine
             .p_oboMneParagraf 
               p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
@@ -13,15 +13,74 @@ main.p_aboutInfo.clearfix
 
 
     .p_aboutInfo_item.p_aboutInfo-blur
-        .p_about_text Чем я могу быть вам полезна
+        .p_about_titileSmall Чем я могу быть вам полезна
         .w__titleLine.p_BiogrLine
-        .p_oboMneParagraf Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку
-      .p_AllSkils        
-        include _diagram
+        .p_oboMneParagraf Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+        .p_skils
+            .p_skils_title Frontend
+            .p_skils_diagrams
+                  .p_skils_oneDiagram
+                    svg(class="circle" width="120" height="120")
+                       circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
+                       circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
+                     span.p_diagram-text HTML 5
+                   .p_skils_oneDiagram
+                    svg(class="circle" width="120" height="120")
+                       circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
+                       circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
+                     span.p_diagram-text CSS 3
+                   .p_skils_oneDiagram
+                    svg(class="circle" width="120" height="120")
+                       circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
+                       circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
+                     span.p_diagram-text JavaScript & jQuery
+        .p_skils
+            .p_skils_title Backend
+            .p_skils_diagrams
+               .p_skils_oneDiagram
+                   svg(class="circle" width="120" height="120")
+                       circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
+                       circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
+                         span.p_diagram-text PHP
+               .p_skils_oneDiagram
+                    svg(class="circle" width="120" height="120")
+                       circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
+                       circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
+                      span.p_diagram-text mySQL
+               .p_skils_oneDiagram
+                    svg(class="circle" width="120" height="120")
+                       circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
+                       circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
+                      span.p_diagram-text Node.js & npm
+               .p_skils_oneDiagram
+                     svg(class="circle" width="120" height="120")
+                       circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
+                       circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
+                       span.p_diagram-text Mongo.db
+        .p_skils
+            .p_skils_title WorkFlow
+            .p_skils_diagrams
+               .p_skils_oneDiagram
+                   svg(class="circle" width="120" height="120")
+                       circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
+                       circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
+                         span.p_diagram-text Git
+               .p_skils_oneDiagram
+                    svg(class="circle" width="120" height="120")
+                       circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
+                       circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
+                      span.p_diagram-text Gulp
+               .p_skils_oneDiagram
+                    svg(class="circle" width="120" height="120")
+                       circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
+                       circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
+                      span.p_diagram-text Bower
 
         .circle-wrap
 
 
   .p_aboutKarta
+       .empty
        .conten
+      
 

@@ -5,9 +5,9 @@
 	position: relative;
 }
 
-.header_name {
-	height: 600px;
-}
+// .header_name {
+// 	height: 600px;
+// }
 
 .ikons_header {
 	position: absolute;
@@ -121,3 +121,16 @@
 	}
 }
 
+.header_triug {
+  fill: #faf8f0;
+  position: absolute;
+  bottom: 0px;
+}
+
+.header_triug-right {
+  fill: #f4f5f0;	
+}
+
+.header_triug-left {
+  fill: #ebefe2;	
+}

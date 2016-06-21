@@ -18,6 +18,7 @@
 .p_aboutInfo-text {
 	background-color: #ebefe2;
 	float: left;
+	padding-right: 20px;
 }
 
 .p_about_text {
@@ -50,12 +51,14 @@
 	height: 390px;
 }
 
-.p_about_text {
+.p_about_titileSmall {
 @include fonts(35px, 'Webissimo-Regular');
 text-transform: uppercase;
 color: #566358;
 margin: auto;
+width: 255px;
 }
+
 
 .p_BiogrLine {
 	background-color: #566358;
@@ -66,7 +69,7 @@ margin: auto;
 	text-align: left;
 	color: #566358;
 	text-transform: none;
-
+	margin-bottom: 60px;
 }
 
 
@@ -78,17 +81,16 @@ margin: auto;
 
 .p_aboutInfo-blur {
 	color: #f4f5f0;
-	padding-left: 40px;
-	padding-right: 60px;
+	padding-left: 20px;
 	box-sizing: border-box;
+	position: relative;
 }
 
 
 .p_skils {
 	width: 100%;
 	height: 163px;
-	margin-top: 60px;
-
+	margin-bottom: 40px;
 }
 
 .p_skils_title {
@@ -116,9 +118,23 @@ margin: auto;
 	width: 60px;
 }
 
+.conten {
+
+	height: 100vh;
+}
+.empty {
+	height: 187px;
+}
+
 .p_aboutKarta {
 	width: 100%;
-	height: 1000px;
+	// height: 100vh;
+  background: url(../img/map.jpg) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 circle {
@@ -137,3 +153,4 @@ circle {
 	transition: stroke-dasharray 0.8s;
 	stroke-dasharray:25px 314px;
 }
+
