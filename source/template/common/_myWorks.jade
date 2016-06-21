@@ -17,7 +17,7 @@
                 .w__blurNav_part.w__blurNav_pDown
                 .w__blurNav_part.w__blurNav_pUp
   .w__otzovi
-      .w_otzovi__conten
+      .conten
         h2.w_otzovi__title Что обо мне говорят
         .w__titleLine.w_otzovi__line
         .w__otzovi_otzovi
@@ -28,8 +28,18 @@
                 .w__otz_dolzhnost — основатель Loftschool
               .w__otz_otzPart
                 .w__otz_foto.w__otz_foto-2
-                .w__otz_text Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                .w__otz_text.w__otz_otzPart-marg Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
                 .w__otz_name Зар Захаров
                 .w__otz_dolzhnost — главный преподаватель
         .w_kontFotm
+           h3.w_otzovi__title.w_otz-form Связаться со мной
+           .w__titleLine
+           .w_otzovi__imputs
+                input(type="text" placeholder="Имя" class="w_otz-Dates")
+                input(type="text" placeholder="Email" class="w_otz-Dates")
+                textarea(rows="5" class="w_otz-Dates w_otz-Message" placeholder="Ваше сообщение")
+           button(type="submit" class="w_otz-buttons w_otz_buttons-borRight") Отправить
+           button(type="reset" class="w_otz-buttons w_otz_buttons-borLeft") Очистить
+
+
         .w_up

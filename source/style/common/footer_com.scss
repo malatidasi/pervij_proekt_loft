@@ -13,7 +13,7 @@
 //   height: 184px; // Равно высоте футера
 // }
 
-.w_otzovi__conten:after {
+.conten:after {
   content: '';
   display: block;
   height: 184px; // Равно высоте футера
@@ -110,7 +110,7 @@
   		margin-bottom: -271px; // Равно высоте футера\
 }
 
-.articles:after, .w_otzovi__conten:after {
+.articles:after, .conten:after {
   height: 271px; // Равно высоте футера
 }
 
@@ -157,7 +157,7 @@
   		margin-bottom: -347px; // Равно высоте футера\
 }
 
-.articles:after, .w_otzovi__conten:after {
+.articles:after, .conten:after {
   height: 347px; // Равно высоте футера
 }
 

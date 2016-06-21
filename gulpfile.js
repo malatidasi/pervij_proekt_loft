@@ -13,7 +13,11 @@ global.$ = {
   gulp: require('gulp'),
   rimraf: require('rimraf'),
   browserSync: require('browser-sync').create(),
-  gp: require('gulp-load-plugins')()
+  gp: require('gulp-load-plugins')(),
+  svgSprite: require('gulp-svg-sprite'),
+  svgmin: require('gulp-svgmin'),
+  cheerio: require('gulp-cheerio'),
+  replace: require('gulp-replace')
 };
 
 $.path.task.forEach(function(taskPath) {
@@ -29,7 +33,8 @@ $.gulp.task('default', $.gulp.series(
     'js.process',
     'copy.image',
     'copy.fonts',
-    'css.foundation'
+    'css.foundation',
+    'svgSpriteBuild'
   ),
   $.gulp.parallel(
     'watch',
