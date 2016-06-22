@@ -48,12 +48,18 @@
 }
 
 .about__contakts {
-	width: 150px;
+	width: 162px;
 	height: 29px;
-	background: #fff;
 	margin: 32px auto 37px;
+
 }
 
+.ikons_img-welkom {
+	fill: rgba(#FFF,0.5);
+	&:hover{
+		fill: #487f38;
+	}
+}
 
 // desctop 1800+
 @media screen and (min-width: 1800px) {

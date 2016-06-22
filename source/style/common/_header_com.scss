@@ -15,6 +15,13 @@
 	left: 30px;
 }
 
+.menu_header {
+	top: 28px;
+	right: 30px;
+	position: absolute;
+}
+
+
 .header_mid {
 	position: absolute;
 	// height: 300px;
@@ -90,6 +97,9 @@
 	z-index:100500;
 }
 
+.arrow {
+	transition: 0.8s;
+}
 
 
 

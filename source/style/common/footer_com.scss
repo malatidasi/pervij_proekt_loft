@@ -13,7 +13,7 @@
 //   height: 184px; // Равно высоте футера
 // }
 
-.conten:before, .conten:after {
+.conten:after {
 	width: 100%;
   content: '';
   display: block;
@@ -92,6 +92,7 @@
 	line-height: 36px;
 	width: 100%;
 	@include fonts(16px, 'Roboto-Light');
+	position: relative;
 }
 
 .footer_com__down_text {

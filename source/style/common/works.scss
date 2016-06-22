@@ -1,5 +1,6 @@
 .works {
 	width: 100%;
+	position: relative;
 } 
 
 .header_triug-works {
@@ -10,8 +11,21 @@
 	background: #f4f5f0;
 }
 
+.w__titleSvg {
+
+	width: 512px;
+	height: 166px;
+	position: absolute;
+	top:-55px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	opacity: 0.1;
+
+}
+
 .w__title {
 	@include titles(63px);
+	position: relative;
 }
 .w__titleLine {
 	height: 3px;
@@ -118,7 +132,7 @@
 
 
 .w__otzovi {
-	margin-top: 90px;
+	margin-top: 60px;
 	width: 100%;
 	background: url(../img/works_bg.jpg) no-repeat center center scroll; 
   -webkit-background-size: cover;
@@ -133,12 +147,23 @@
 	height: 100%;
 }
 
+.w_otzovi__titleSvg {
+	width: 503px;
+	height: 170px;
+	position: absolute;
+	top:-30px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	opacity: 0.1;
+}
+
 .w_otzovi__title {	
 	@include titles(63px);
 	width: 339px;
 	margin: 0 auto;
 	text-transform: uppercase;
 	line-height: 1.05;
+	position: relative;
 }
 
 .w_otzovi__line {
@@ -187,6 +212,14 @@
 	margin: 10px auto 17px;
 	line-height: 1.5;
 	// margin-left: 20px;
+}
+
+.w__otz_text-left {
+	padding-right: 20px; 
+}
+
+.w__otz_text-right {
+	padding-left: 20px; 
 }
 
 .w__otz_name {
@@ -266,5 +299,4 @@
 	height: 16px;
 	width: 26px;
 	margin: 0 auto 72px;
-	background-color: #FFF;
 }
