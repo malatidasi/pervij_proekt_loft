@@ -1,17 +1,28 @@
 .ikons {
-	width: 146px;
+	width: 162px;
 	height: 24px;
 	// background-color: #FFF;
+}
 
+.ikon_one {
+	margin-right: 30px;
+	display: inline-block;
 }
 
 .ikons_img {
-	height: 17px;
+	height: 24px;
 	width: 31px;
-	background-image: url("../img/svg/vk.svg");
 	fill: #FFF;
 	&:hover{
-		fill: red;
-		background-color: #6c9c5a;
+		fill: #487f38;
 	}	
+}
+
+.ikon_last-one {
+	margin: 0;
+}
+
+.ikons_a {
+height: 100%;
+width: 100%;
 }

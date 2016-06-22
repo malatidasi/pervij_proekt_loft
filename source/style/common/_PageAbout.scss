@@ -1,8 +1,7 @@
 .p_aboutInfo {
 	width: 100%;
-	height: 836px;
+	height: 850px;
 	font-size: 0px;
-
 	box-sizing: border-box;
 }
 
@@ -30,11 +29,25 @@
 
 .p_aboutInfo-title {
 	vertical-align: top;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.p_about-titleSvg {
+	width: 360px;
+	height: 127px;
+	position: absolute;
+	top:-58px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	opacity: 0.1;
+	z-index:1;
 }
 
 .p_about-title {
-	margin: 0;
-
+	margin: 0 0 10px;
+	line-height: 0.7;
+	z-index: 2;
 }
 
 .p_about-line {
@@ -49,6 +62,7 @@
 	background-size: cover;
 	width: 100%;
 	height: 390px;
+	margin-bottom: 30px;
 }
 
 .p_about_titileSmall {
@@ -57,11 +71,13 @@ text-transform: uppercase;
 color: #566358;
 margin: auto;
 width: 255px;
+// line-height: 0.7;
 }
 
 
 .p_BiogrLine {
 	background-color: #566358;
+	margin: 21px auto 24px;
 }
 
 .p_oboMneParagraf {
@@ -69,7 +85,7 @@ width: 255px;
 	text-align: left;
 	color: #566358;
 	text-transform: none;
-	margin-bottom: 60px;
+	margin-bottom:49px;
 }
 
 
@@ -81,7 +97,7 @@ width: 255px;
 
 .p_aboutInfo-blur {
 	color: #f4f5f0;
-	padding-left: 20px;
+	padding-left: 40px;
 	box-sizing: border-box;
 	position: relative;
 }
@@ -97,7 +113,7 @@ width: 255px;
 	@include fonts (28px, 'Roboto-Medium');
 	color: #566358;
 	text-align: left;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 }
 
 .p_skils_oneDiagram {
@@ -106,6 +122,9 @@ width: 255px;
 	width: 120px;
 	display: inline-block;
 	margin-right: 40px;
+}
+.p_skils_oneDiagram-LastOne {
+	margin: 0px;
 }
 
 .p_diagram-text{
@@ -146,20 +165,48 @@ width: 255px;
 	margin-left: -165px;
 	background-color: rgba(#f4f5f0, 0.85);
 	border-radius: 5px;
-	padding-top: 20px;
+	padding-top: 26px;
+}
+
+.p_kontaks_blog {
+	margin-top: 32px;
 }
 
 .p_kontaks_blog_item {
-	padding-left: 35px;
-	margin-bottom: 30px;
+	padding-left: 45px;
+	margin-bottom: 21px;
+	position: relative;
 }
 
+.kontakts_img-skype {
+	position: absolute;
+	left: 40px;
+	top: 0px;
+}
+
+.kontakts_img-email {
+	position: absolute;
+	left: 40px;
+	top: 3px;
+}
+
+.kontakts_img-phone {
+	position: absolute;
+	left: 43px;
+	top: 3px;
+}
+
+.kontakts_img-adres {
+	position: absolute;
+	line-height: 40px;
+	top: 0px;
+}
 
 .p_kontaks_blog_text {
 	@include fonts (16px, 'Roboto-Medium');
 	color: #566358;
 	text-align: left;
-	padding-left: 10px;
+	padding-left: 30px;
 }
 
 circle {

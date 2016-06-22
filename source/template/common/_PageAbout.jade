@@ -1,6 +1,9 @@
 main.p_aboutInfo.clearfix
     .p_aboutInfo_item.p_aboutInfo-text
         .p_about_text.p_aboutInfo-title
+           .p_about-titleSvg
+             object(type="image/svg+xml" name="myicon" 
+	data="assets/img/svg/about_header.svg" width="100%" height="100%")
            h1.w__title.p_about-title Обо мне
            .w__titleLine.p_about-line
         .p_about_text.p_about-Biogr
@@ -19,6 +22,7 @@ main.p_aboutInfo.clearfix
         .p_skils
             .p_skils_title Frontend
             .p_skils_diagrams
+                  a(name="arrow_top")
                   .p_skils_oneDiagram
                     svg(class="circle" width="120" height="120")
                        circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
@@ -52,7 +56,7 @@ main.p_aboutInfo.clearfix
                        circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
                        circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
                       span.p_diagram-text Node.js & npm
-               .p_skils_oneDiagram
+               .p_skils_oneDiagram.p_skils_oneDiagram-LastOne
                      svg(class="circle" width="120" height="120")
                        circle(transform="rotate(-90)" r="50" cx="-60" cy="60")
                        circle(class="circle1" transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60")
@@ -83,15 +87,15 @@ main.p_aboutInfo.clearfix
                 .w__titleLine.p_BiogrLine
                 .p_kontaks_blog
                     .p_kontaks_blog_item
-                        img(src="assets/img/svg/skype.svg", alt="Skype")
+                        img(src="assets/img/svg/skype.svg", alt="Skype" class="kontakts_img-skype")
                         span.p_kontaks_blog_text limi_mari
                     .p_kontaks_blog_item
-                        img(src="assets/img/svg/envelope2.svg", alt="email")
+                        img(src="assets/img/svg/envelope2.svg", alt="email" class="kontakts_img-email")
                         span.p_kontaks_blog_text limi_mari@mail.ru
                     .p_kontaks_blog_item
-                        img(src="assets/img/svg/phone2.svg", alt="phone number")
+                        img(src="assets/img/svg/phone2.svg", alt="phone number" class="kontakts_img-phone")
                         span.p_kontaks_blog_text +7 929 520 47 57
                     .p_kontaks_blog_item
-                        img(src="assets/img/svg/map_marker.svg", alt="Skype")
+                        img(src="assets/img/svg/map_marker.svg", alt="Adres" class="kontakts_img-adres")
                         span.p_kontaks_blog_text г. Кемерово 
                   
