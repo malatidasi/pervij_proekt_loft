@@ -1,5 +1,9 @@
 @import 'common/fonts';
 
+* {
+  box-sizing:border-box;
+}
+
 html {
 	height: 100%;
 }

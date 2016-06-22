@@ -119,8 +119,7 @@ width: 255px;
 }
 
 .conten {
-
-	height: 100vh;
+	position: relative;
 }
 .empty {
 	height: 187px;
@@ -128,13 +127,39 @@ width: 255px;
 
 .p_aboutKarta {
 	width: 100%;
-	// height: 100vh;
+	height: 1110px;
   background: url(../img/map.jpg) no-repeat center center scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
 
+
+.p_karta_kontakts {
+	position: absolute;
+	height: 312px;
+	width: 380px;
+	top: 345px;
+	left: 50%;
+	margin-top: -156px;
+	margin-left: -165px;
+	background-color: rgba(#f4f5f0, 0.85);
+	border-radius: 5px;
+	padding-top: 20px;
+}
+
+.p_kontaks_blog_item {
+	padding-left: 35px;
+	margin-bottom: 30px;
+}
+
+
+.p_kontaks_blog_text {
+	@include fonts (16px, 'Roboto-Medium');
+	color: #566358;
+	text-align: left;
+	padding-left: 10px;
 }
 
 circle {

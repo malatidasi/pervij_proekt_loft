@@ -1,19 +1,28 @@
 .conteiner {
-	padding-top: 120px;
+	height: 100%;
+	width: 100%;
+	// padding-top: 120px;
+	position: relative;
 }
 
 .about {
 	height: 395px;
 	width: 380px;
 	background-color: rgba(18,38,32,0.6);
-	margin: auto;
 	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -197.5px;
+	margin-left: -190px;
+
 }
 
 .about__cont_foto {
 	height: 182px;
 	width: 100%;
-	position: relative;
+	padding-top: 40px;
+	box-sizing: border-box;
 }
 
 
@@ -24,11 +33,8 @@
 	background: url(../img/foto.jpg);
 	background-size: cover;
     background-position: 0 -28px;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    margin-right: -70px;
-
+	margin: 0 auto;
+	position: relative;
 }
 
 .about__name {
@@ -51,28 +57,29 @@
 
 // desctop 1800+
 @media screen and (min-width: 1800px) {
-  .conteiner {
-	padding-top: 248px;
-	}
+ //  .conteiner {
+	// padding-top: 248px;
+	// }
 }
 
 // ipad
 @media screen and (min-width: 767px) and (max-width: 1199px) and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-  .conteiner {
-	padding-top: 277px;
-	}
+ //  .conteiner {
+	// padding-top: 277px;
+	// }
 }
 
 
 // Iphones
 @media screen and (max-width: 766px) {
-  .conteiner {
-	padding-top: 85px;
-	}
+ //  .conteiner {
+	// padding-top: 85px;
+	// }
 
  .about {
   	width: 300px;
+  	margin-left: -150px;
   }
 
   .about__name {

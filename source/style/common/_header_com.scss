@@ -2,7 +2,7 @@
 	width: 100%;
 	height: 100vh;
 	background-attachment: scroll;
-	position: relative;
+	padding-top: 80px;
 }
 
 // .header_name {
@@ -15,62 +15,70 @@
 	left: 30px;
 }
 
-.about__cont-com {
-	top: 80px;
+.header_mid {
+	position: absolute;
+	// height: 300px;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	transform: translate(-50%, -50%);
+
 }
 
-.about__cont-name {
-	top: 152px;
+.about-com__portfolio_svg {
+	position: absolute;
+	background: url("../img/svg/portfolio_header.svg") no-repeat center center scroll;
+	height: 315px;
+	width: 100%;
+	top: -35px;
+	// left: 50%;
+	// margin-left: -153.5px;
+	opacity: 0.12;
 }
 
-.about-com__myName {
-	top: 155px;
+.about-com__title_svg {	
+	position: absolute;
+	background: url("../img/svg/blog_header.svg") no-repeat center center scroll;
+	height: 214px;
+	width: 307px;
+	top: 105px;
+	left: 50%;
+	margin-left: -153.5px;
+	opacity: 0.12;
 }
 
-.about__foto-com {
-	top:0;
-}
 
 .about-com__title {
 	@include titles(63px);
-	// height: 75px;
-	//143 background: url("$adres") no-repeat center center scroll;
 	color: #fff;
-	position: absolute;
-	top: 157px;
-	left: 50%;
-	margin-left: -63px;
+	margin: 0 auto;
 	text-transform: uppercase;
+	margin: 10px 0 15px;
+	// background: url("../img/svg/blog_header.svg") no-repeat center center scroll;
+
 }
 
 .about-com__name {
 	@include fonts(35px, 'Roboto-Medium');
-	position: absolute;
-	top: 157px;
-	left: 50%;
-	margin-left: -200px;
+	margin-top: 30px;
 }
 
 .about-com__line {
 	height: 3px;
 	width: 89px;
 	background-color: #FFF;
-	position: absolute;
-	top: 248px;
-	left: 50%;
-	margin-left: -47px;
+	margin: 0 auto;
 }
 
 .about-com__opisanie {
-	position: absolute;
-	top: 277px;
 	@include fonts(16px, 'Roboto-Regular');
 	width: 100%;
 }
-
-.about-com__opisanie-prof {
-	top: 213px;
+.about-com__opisanie-blog {
+	margin-top: 25px;
+	
 }
+
 
 
 
@@ -125,6 +133,9 @@
   fill: #faf8f0;
   position: absolute;
   bottom: 0px;
+  &-works {
+  	fill:#f8f9f5;
+  }
 }
 
 .header_triug-right {

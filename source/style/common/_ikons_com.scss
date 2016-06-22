@@ -1,6 +1,17 @@
 .ikons {
 	width: 146px;
 	height: 24px;
-	background-color: #FFF;
+	// background-color: #FFF;
 
+}
+
+.ikons_img {
+	height: 17px;
+	width: 31px;
+	background-image: url("../img/svg/vk.svg");
+	fill: #FFF;
+	&:hover{
+		fill: red;
+		background-color: #6c9c5a;
+	}	
 }
