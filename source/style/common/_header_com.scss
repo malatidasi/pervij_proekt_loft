@@ -5,9 +5,12 @@
 	padding-top: 80px;
 }
 
-// .header_name {
-// 	height: 600px;
-// }
+.vk {
+	// width="30.011px"
+	// height="17.123px"
+	width: 50px;
+	height: 100px;
+}
 
 .ikons_header {
 	position: absolute;
@@ -19,12 +22,13 @@
 	top: 28px;
 	right: 30px;
 	position: absolute;
+	height: 35px;
+	width: 40px;
 }
 
 
 .header_mid {
 	position: absolute;
-	// height: 300px;
 	top: 50%;
 	left: 50%;
 	width: 90%;
@@ -35,11 +39,12 @@
 .about-com__portfolio_svg {
 	position: absolute;
 	background: url("../img/svg/portfolio_header.svg") no-repeat center center scroll;
-	height: 315px;
+	height: 100%;
 	width: 100%;
 	top: -35px;
-	// left: 50%;
-	// margin-left: -153.5px;
+	background-size: contain;
+	left: 50%;
+	transform: translate(-50%, 0%);
 	opacity: 0.12;
 }
 
@@ -47,10 +52,11 @@
 	position: absolute;
 	background: url("../img/svg/blog_header.svg") no-repeat center center scroll;
 	height: 214px;
+	background-size: contain;
 	width: 307px;
 	top: 105px;
 	left: 50%;
-	margin-left: -153.5px;
+	transform: translate(-50%, 0%);
 	opacity: 0.12;
 }
 
@@ -120,7 +126,7 @@
 // ipad
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.header, .header_name {
-		height: 505px;
+		// height: 505px;
 	}
 
 	.about__cont-com, .about__cont-name {
@@ -134,18 +140,52 @@
 .about-com__opisanie-prof {
 	top: 211px;
 }
+
+.header_triug-right {
+  fill: #ebefe2;	
+}
+
 }
 
 
 //iphone
 @media screen and (max-width: 767px) {
-	.header {
-		height: 558px;
+	
+//fonts
+	.about-com__name {
+		font-size: 21px;
 	}
 
-	.about__cont-com {
-	top: 116px;
+	.about-com__opisanie {
+		font-size: 14px;
 	}
+
+//polozhenie ikonok
+	.ikons_header {
+		top: 13px;
+		left: 11px;
+	}
+
+
+	.about-com__portfolio_svg {
+		display: none;
+	}
+
+	.menu_header {
+		height: 23px;
+		width: 26px;
+		top:10px;
+		right: 10px;
+	}
+
+	.vk {
+		width: 24px;
+		height: 14px;
+	}
+
+	.header_triug-right {
+  fill: #ebefe2;	
+}
 }
 
 .header_triug {

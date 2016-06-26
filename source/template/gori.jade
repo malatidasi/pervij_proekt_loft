@@ -1,0 +1,33 @@
+doctype html
+html
+  include common/_head
+   title Gori
+  body.works_bg
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+    .wrapper_gori
+      ul(id="scene")
+         li(class="layer" data-depth="0.00")
+            img(src="assets/img/gori_bg.jpg" )
+
+         li(class="layer" data-depth="0.10")
+               img(src="assets/img/0.png")
+
+         li(class="layer" data-depth="0.2")
+            img(src="assets/img/1.png")
+
+         li(class="layer" data-depth="0.40")
+            img(src="assets/img/2.png")
+
+         li(class="layer" data-depth="0.60")
+            img(src="assets/img/3.png")
+
+         li(class="layer" data-depth=".80")
+            img(src="assets/img/4.png")
+
+         li(class="layer" data-depth="1.00")
+            img(src="assets/img/5.png")
+script.
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);

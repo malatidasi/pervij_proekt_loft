@@ -206,5 +206,38 @@
 	left: 50%;
 }
 
+//fonts
+.fonts_light {
+	font-size: 14px;
+	line-height: 1.5;
+}
+.footer_com__down_text {
+	font-size: 14px;
+}
+
+//paddings
+.footer_com__block {
+	padding-top: 15px;
+}
+
+//lines
+.footer_com__block {
+	position: relative;
+}
+
+.footer_com__block-line1, .footer_com__block-line2 {
+	height: 1px;
+	width: 100%;
+	right: 0px;
+	bottom: 0px;
+	display: block;
+	position: absolute;
+}
+
+.footer_com__block-big {
+	height: 150px;
+}
+
+
 
 }

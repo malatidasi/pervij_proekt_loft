@@ -1,6 +1,5 @@
 .p_aboutInfo {
 	width: 100%;
-	height: 850px;
 	font-size: 0px;
 	box-sizing: border-box;
 }
@@ -17,13 +16,14 @@
 .p_aboutInfo-text {
 	background-color: #ebefe2;
 	float: left;
-	padding-right: 20px;
+	padding-right: 20px;	
+	height: 100%;
 }
 
 .p_about_text {
 	display: inline-block;
 	width: 50%;
-
+	height: 100%;
 	vertical-align: top;
 }
 
@@ -60,9 +60,10 @@
 .p_about_foto {
 	background-image: url("../img/foto.jpg");
 	background-size: cover;
-	width: 100%;
+	width: 437px;
 	height: 390px;
 	margin-bottom: 30px;
+	margin: 0 auto;
 }
 
 .p_about_titileSmall {
@@ -71,7 +72,10 @@ text-transform: uppercase;
 color: #566358;
 margin: auto;
 width: 255px;
-// line-height: 0.7;
+}
+
+.p_about_titileSmall-margin {
+	margin-top: 30px;
 }
 
 
@@ -97,7 +101,7 @@ width: 255px;
 
 .p_aboutInfo-blur {
 	color: #f4f5f0;
-	padding-left: 40px;
+	padding-left: 37px;
 	box-sizing: border-box;
 	position: relative;
 }
@@ -105,7 +109,6 @@ width: 255px;
 
 .p_skils {
 	width: 100%;
-	height: 163px;
 	margin-bottom: 40px;
 }
 
@@ -118,10 +121,10 @@ width: 255px;
 
 .p_skils_oneDiagram {
 	position: relative;
-	height: 120px;
-	width: 120px;
+	height: 110px;
+	width: 110px;
 	display: inline-block;
-	margin-right: 40px;
+	margin-right: 37px;
 }
 .p_skils_oneDiagram-LastOne {
 	margin: 0px;
@@ -134,19 +137,13 @@ width: 255px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	width: 60px;
+	width: 68px;
 }
 
-.conten {
-	position: relative;
-}
-.empty {
-	height: 187px;
-}
 
 .p_aboutKarta {
 	width: 100%;
-	height: 1110px;
+	height: 130vh;
   background: url(../img/map.jpg) no-repeat center center scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -154,12 +151,15 @@ width: 255px;
   background-size: cover;
 }
 
+.conten {
+	position: relative;
+}
 
 .p_karta_kontakts {
 	position: absolute;
 	height: 312px;
 	width: 380px;
-	top: 345px;
+	top: 39%;
 	left: 50%;
 	margin-top: -156px;
 	margin-left: -165px;
@@ -226,3 +226,124 @@ circle {
 	stroke-dasharray:25px 314px;
 }
 
+// desctop 1200
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+	.p_about_text {
+		display: block;
+		width: 100%;
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+
+//photo
+	.p_about_foto {
+		width: 445px;
+		height: 390px;
+	}
+
+.p_about-title {
+	margin-top: 20px;
+}
+
+
+}
+
+// ipad
+@media screen and (max-width: 1199px) {
+	.p_aboutInfo_item {
+		display: block;
+		width: 100%;
+	}
+
+	.p_aboutInfo-text {
+		float: none;
+	}
+
+		.p_about_text {
+		display: block;
+		width: 100%;
+	}
+	
+	.p_about-title {
+		font-size: 49px;
+		margin-top: 53px;
+	}
+
+//photo
+	.p_about_foto {
+		width: 475px;
+		height: 417px;
+	}
+
+//fonts
+	.p_diagram-text {
+		font-size: 12.83px;
+	}
+	.p_about_titileSmall {
+		font-size: 30px;
+	}
+
+	.p_oboMneParagraf {
+		font-size: 14px;
+	}
+
+//colors bg
+	.about_bg {
+		background-color: #ebefe2;
+	}
+
+	.header_triug-right {
+		fill: #ebefe2;
+	}
+
+//paddings
+.p_aboutInfo-text, .p_aboutInfo-blur {
+	padding: 0;
+}
+	.p_aboutInfo-title, .p_oboMneParagraf {
+		padding-left: 19%;
+		padding-right: 19%;
+	}
+
+//skills po zentru
+.p_skils_title, .p_skils_diagrams {
+	text-align: center;
+}
+
+.p_skils_diagrams {
+
+}
+}
+
+
+//iphone
+@media screen and (max-width: 767px) {
+
+//photo
+	.p_about_foto {
+		width: 320px;
+		height: 286px;
+	}
+
+//paddings+margin
+.p_aboutInfo-title, .p_oboMneParagraf {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.p_skils_oneDiagram {
+	margin-left: 19px;
+	margin-right: 19px;
+	margin-bottom: 30px;
+}
+
+.p_skils {
+	margin-bottom: 0;
+}
+
+.p_karta_kontakts {
+	width: 320px;
+	top: 5px;
+	margin-top: 0;
+}
+}
