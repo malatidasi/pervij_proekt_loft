@@ -1,6 +1,6 @@
 .nav_com {
 	width: 100%;
-	height: 60px;
+	// height: 60px;
 	font-size: 0px;
 	padding-left: 30px;
 	box-sizing: border-box;
@@ -31,7 +31,18 @@
 }}
 
 @media screen and (max-width: 767px) {
-	.nav_com {
-		margin: 0;
-	}
+
+//fonts
+.nav_com__button {
+	@include fonts(14px, 'Roboto-Medium');
+	margin-right: 10px;
+}
+.nav_com {
+	padding-left: 0;
+	margin: auto;
+}
+
+.nav_com__button-noMargin {
+	margin-right: 0;
+}
 }

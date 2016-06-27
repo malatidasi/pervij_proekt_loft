@@ -33,9 +33,9 @@ $.gulp.task('default', $.gulp.series(
     'js.process',
     'copy.image',
     'copy.fonts',
-    'copy.js',
-    'css.foundation',
-    'svgSpriteBuild'
+    // 'copy.js',
+    'css.foundation'
+    // 'svgSpriteBuild'
   ),
   $.gulp.parallel(
     'watch',
