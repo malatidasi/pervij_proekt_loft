@@ -25,7 +25,7 @@ $(document).ready(function () {
 			}
 		});
 
-		console.log(imgs);
+		var percents = 1;
 
 		for (var i=0; i<imgs.length; i++) {
 			var image = $('<img>', {
@@ -35,13 +35,23 @@ $(document).ready(function () {
 			});
 
 			image.load(function () {
-
+				setPercents(imgs.length, percents);
+				percents ++;
 			});
 
 		}
 
 		function setPersents(total, current) {
 			var percent = Math.cell(current / total * 100);
+
+			if (percent >= 100) {
+				$('.wrap').css('display', 'block');
+			}
+
+
+			$('.loader-bar').css({
+				'width' : percent + '%'
+			}).text(percent + '%');
 
 		};
 

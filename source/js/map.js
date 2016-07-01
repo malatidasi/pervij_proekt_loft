@@ -1,14 +1,14 @@
 'use strict';
-
 (function() {
 
 	$(document).ready(function () {
 		initMap();
-	})
+	});
 
-	var map;
-	function initMap() {
-	  map = new google.maps.Map(document.getElementById('map'), {
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
 	  	disableDefaultUI: true,
 	  	scrollwheel: false,
 	  	styles: [
@@ -110,7 +110,8 @@
 				    }
 				],
 	    center: {lat: 55.35267641, lng: 86.07057834},
-	    zoom: 14
-	  });
-	};
+    zoom: 14
+  });
+};
+
 })();
