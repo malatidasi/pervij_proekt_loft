@@ -13,7 +13,6 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-
 }
 .body {
   background: url(../img/water_sr.jpg) no-repeat center center fixed; 
@@ -22,6 +21,8 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+
 
 @import 'gori';
 
@@ -54,4 +55,9 @@ body {
 @import 'common/footer';
 @import 'common/footer_com';
 
+//preloader
+@import 'common/preloader.scss';
 
+.wrapper {
+  // display: none;
+}
