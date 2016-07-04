@@ -1,3 +1,110 @@
-.main_menu {
-	
+ul,li{
+  padding: 0;
+  margin: 0;
 }
+
+//menu=main_menu
+
+.content{
+  width: 100%;
+  height: 100%;	
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 90;
+}
+
+.main_menu__list {
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_menu__item {
+	width: 100%;
+	display: block;
+ 	@include fonts(63px, 'Roboto-Regular');
+    text-transform: uppercase;
+    text-decoration: none;
+	
+	&-no_margin {
+		margin: 0;
+	}
+
+}
+
+.main_menu__line {
+	margin: 3px auto 35px;
+	height: 3px;
+	width: 90px;
+	background-color: #FFF;
+	display: block;
+	opacity: 0;
+}
+
+.main_menu__line-opas {
+	opacity: 1;
+}
+
+
+.content_show{
+  transition: all 0s ease 1.5s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.main_menu{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width : 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.main_menu:after,
+.main_menu:before{
+  content:'';
+  display: block;
+  float: left;
+  background-color: rgba(#6c9c5a, .87);
+  width:50%;
+  height: 100%;
+  transition: transform, 1.5s;
+  z-index: 11;
+}
+
+.main_menu:before{
+  transform:translateX(-100%);
+  position: absolute;
+}
+
+.main_menu:after{
+  transform:translateX(200%);
+  position: absolute;
+}
+
+.main_menu-active:before{
+  transform:translateX(0);
+  position: absolute;
+
+}
+
+.main_menu-active:after{
+  transform:translateX(100%);
+  position: absolute;
+}
+
+
+
+.pos_fixed {
+	position: fixed;
+	overflow-y: scroll;
+}
+

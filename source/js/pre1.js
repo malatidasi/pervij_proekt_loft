@@ -1,80 +1,104 @@
-$(document).ready(function () {
-
-	$(function (){
-		var imgs = [];
-
-		$('*').each(function () {
-			var $this = $(this),
-				background = $this.css('background-image'),
-				img = $this.is('img');
-
-			if (background != 'none') {
-				var path = background.replace('url("', '').replace('")', '');
-				
-				imgs.push(path);
-
-			}
-
-		
-			if (img) {
-				var path = $this.attr('src');
-
-				if (path) {
-					imgs.push(path);
-				}
-			}
-		});
-
-		
-			console.log(imgs);
+  var numimg = 0;
+    var qr;
+    var cssUrlRegex = /url\(\s*(['"]?)(.*?)\1\s*\)/g;
+    var images = new Array();
+    var cssImageProps = [
+        'background',
+        'backgroundImage',
+        'backgroundImage',
+        'borderImage',
+        'borderCornerImage',
+        'listStyleImage',
+        'cursor'
+    ];
 
 
-		var percents = 1;
+    function load(url) {
+        return new Promise(function (resolve, reject) {
+            var newimg = new Image();
+            newimg.src = url;
+            newimg.onload = function () {
+                resolve();
+            };
+            newimg.onerror = function () {
+                reject();
+            };
+        });
+    };
+    function getimg(url) {
+        load(url).then(
+            function () {
+                timer();
+            },
+            function () {
+                timer();
+            }
+        );
+    };
+    function repeatimg(url) {
+        if ($.inArray(url, images) == -1) {
+            getimg(url);
+            images.push(url);
+        };
+    };
 
-		for (var i=0; i<imgs.length; i++) {
-			var image = $('<img>', {
-				attr: {
-					src : imgs[i]
-				}
-			});
+    $("*").each(function (i, e) {
 
-			image.load(function() {
-				setPercents(imgs.length, percents);
-				percents ++;
-			});
+        if ($(e).is('img') && $(e).attr("src")) {
+            repeatimg($(e).attr("src"));
+        };
 
-		}
+        $.each(cssImageProps, function (i, property) {
+            var propertyValue = $(e).css(property);
+            var match;
+            if (!propertyValue) {
+                return true;
+            }
 
-		var dashof = 96;
+            match = cssUrlRegex.exec(propertyValue);
+            if (match) {
+                repeatimg(match[2]);
+            }
+        });
+    });
+    function numAnimate(toNum,fromNum) {
+        clearInterval(qr);
+        qr = setInterval(function () {
+            fromNum++;
+            if (fromNum <= toNum) {
+                $('.loader__text').text(fromNum);
+            };
+        }, 1);
+    };
+    function timer(){
+        var persent;
+        numimg = numimg + 1;
+        persent = numimg * 70 / images.length;
+        persent = persent + 30;
+        persent = (persent-persent%1);
+        var fromNum = $('.loader__text').text();
 
-		function setPersents(total, current) {
-			var percent_before = Math.cell((current-1) / total * 100);
-			var percent = Math.cell(current / total * 100);
+        if (numimg == 1 ){
+            fromNum = 0;
+        };
+        if (persent == 100 ){
+            clearInterval(qr);
+            $('.loader__text').text('100');
+            closepreloader();
+        } else {
+            numAnimate(persent,fromNum);
+        };
+    };
+    function closepreloader() {
+        $('.loader').delay(500).fadeOut();
+        $('.b-portfolio_flipJS').delay(500).queue(function() {
+            $(this).addClass('b-portfolio_flipin');
 
-			if (percent >= 100) {
-				$('.wraper').css('display', 'block');
-			} 
-			else 
-			{
-				for (var i = percent_before; i <= percent; i++) {
-					
-					for (var q = 1; q <= 5; q++) {
-						$('.preloadSvg_line').css({
-							'stroke-dashoffset' : dashof-q
-						});
-					dashof=-5;
-					}
-					
-					$('.preloadSvg_text').text(percent);				
+            $('.b-portfolio').delay(1500).queue(function() {
+                $('.b-portfolio').removeClass('b-portfolio_flipin');
+            });
+        });
 
-				}
-			}
-		}
+        $('body').removeClass('i-overflow_hidden');
+    };
 
-	});
-
-	$(function () {
-		
-	});
-
-});

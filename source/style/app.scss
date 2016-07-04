@@ -22,7 +22,7 @@ body {
   background-size: cover;
 }
 
-
+ 
 
 @import 'gori';
 
@@ -58,6 +58,12 @@ body {
 //preloader
 @import 'common/preloader.scss';
 
-.wrapper {
-  // display: none;
+//main_menu
+@import 'common/menu.scss';
+
+//slider
+@import 'common/slider.scss';
+
+.wrapper, footer, .wrapper_com {
+  display: none;
 }

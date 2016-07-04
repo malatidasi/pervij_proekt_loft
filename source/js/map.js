@@ -1,9 +1,11 @@
 'use strict';
 (function() {
 
+if ($('#map').length) {
 	$(document).ready(function () {
 		initMap();
 	});
+};
 
 
 var map;

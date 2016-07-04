@@ -3,6 +3,26 @@
 	height: 100vh;
 	background-attachment: scroll;
 	padding-top: 80px;
+	min-height: 650px;
+}
+
+.header__bg {
+	min-height: 650px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index:0;
+	min-width: 1000px;
+	// overflow: hidden;
+	
+	img {
+		display: block;
+		max-width: 100%;
+		height: 900px;
+	}
+
 }
 
 .vk {
@@ -11,11 +31,12 @@
 	width: 50px;
 	height: 100px;
 }
-
+ 
 .ikons_header {
 	position: absolute;
 	top: 33px;
 	left: 30px;
+	z-index: 8;
 }
 
 .menu_header {
@@ -24,6 +45,8 @@
 	position: absolute;
 	height: 35px;
 	width: 40px;
+	cursor: pointer;
+	z-index: 101;
 }
 
 
@@ -33,7 +56,7 @@
 	left: 50%;
 	width: 90%;
 	transform: translate(-50%, -50%);
-
+	z-index:11;
 }
 
 .about-com__portfolio_svg {
@@ -46,6 +69,7 @@
 	left: 50%;
 	transform: translate(-50%, 0%);
 	opacity: 0.12;
+	z-index: 0;
 }
 
 .about-com__title_svg {	
@@ -100,12 +124,10 @@
 	bottom: 70px;
 	left: 50%;
 	margin-left: -15px;
-	z-index:100500;
+	z-index:8;
 }
 
-.arrow {
-	transition: 0.8s;
-}
+
 
 
 
@@ -191,7 +213,7 @@
 .header_triug {
   fill: #faf8f0;
   position: absolute;
-  bottom: 0px;
+  bottom: -10px;
   &-works {
   	fill:#f8f9f5;
   }

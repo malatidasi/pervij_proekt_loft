@@ -22,6 +22,24 @@
 
 .preloadSvg_line {
   stroke: #fff;
-  stroke-dasharray: 96;
-  stroke-dashoffset:96;
+  stroke-dasharray: 70;
+  stroke-dashoffset: 0;
+  animation: svg_line 0.9s ease-in-out reverse infinite;
+
+  &2 {
+    animation-delay: 0.1s;
+      }
+
+  &3 {
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes svg_line {
+    0% {
+        stroke-dashoffset: 70;
+    }
+    100% {
+        stroke-dashoffset: 70*3;
+    }
 }
