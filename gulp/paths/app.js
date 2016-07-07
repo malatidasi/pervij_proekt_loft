@@ -5,5 +5,6 @@ module.exports = [
   // './source/js/gori.js',
   './source/js/preloader.js',
   './source/js/header_parallax.js',
-  './source/js/main_menu.js'
+  './source/js/main_menu.js',
+  './source/js/login.js'
 ];

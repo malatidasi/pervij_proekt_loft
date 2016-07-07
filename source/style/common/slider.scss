@@ -1,8 +1,14 @@
+.works-slider {
+  height: 100%;
+  display: table;
+}
+
 .works-slider__main-slide {
   margin: 0 auto;
-  width: 500px;
-  height: 500px;
-}
+  width: 100%;
+  height: 70%;
+  display: table-cell;
+} 
 
 .works-slider__main-pic {
   max-width: 100%;
@@ -10,18 +16,25 @@
 }
 
 .works-slider__small-slides-wrap {
+  height: 30%;
+  display: table-row;
+
 }
 
 .works-slider__small-slide {
-  float: left;
+  height: 100%;
   width: 50%;
   cursor: pointer;
+  border: 0;
+  outline: none;
+  display: table-cell;
 }
 
 .works-slider__slides-list {
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  // height: 100px;
+  height: 225px;
   overflow: hidden;
   position: relative;
 }
@@ -50,8 +63,8 @@ $work-slider-anim-duration: 5s;
 }
 
 .works-slider__slide-item {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   display: block;
   position: absolute;
   left: 0;

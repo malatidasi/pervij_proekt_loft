@@ -21,7 +21,7 @@
 			border-bottom-right-radius: 5px;
 		}
 	
-		&__{
+		&__item{
 			display: inline-block;
 			line-height: 45px;
 			@include fonts(16px, 'Roboto-Medium');

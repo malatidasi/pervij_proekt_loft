@@ -1,9 +1,12 @@
 .header {
 	width: 100%;
 	height: 100vh;
+	// height: 100%;
 	background-attachment: scroll;
 	padding-top: 80px;
 	min-height: 650px;
+	overflow: hidden;
+	position: relative;
 }
 
 .header__bg {
@@ -15,7 +18,6 @@
 	right: 0;
 	z-index:0;
 	min-width: 1000px;
-	// overflow: hidden;
 	
 	img {
 		display: block;
@@ -63,11 +65,11 @@
 	position: absolute;
 	background: url("../img/svg/portfolio_header.svg") no-repeat center center scroll;
 	height: 100%;
-	width: 100%;
-	top: -35px;
-	background-size: contain;
+	width: 90%;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%, 0%);
+	background-size: contain;
+	transform: translate(-50%, -50%);
 	opacity: 0.12;
 	z-index: 0;
 }
@@ -213,7 +215,11 @@
 .header_triug {
   fill: #faf8f0;
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
+  height: 10rem;
+  preserveAspectRatio: none;
+  width: 100%;
+
   &-works {
   	fill:#f8f9f5;
   }

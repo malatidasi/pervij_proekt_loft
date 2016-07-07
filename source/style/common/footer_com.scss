@@ -1,5 +1,7 @@
 .footer_com {
   height: 184px; // фиксированая высота футера 
+ position: relative;
+ z-index: 11;
  }
 
 .wrapper_com {

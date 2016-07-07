@@ -12,10 +12,11 @@
 	border-radius: 5px;
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	margin-top: -197.5px;
-	margin-left: -190px;
-
+	left: 50%;	
+	transform: translate(-50%, -50%);
+}
+.displaynone {
+	display: none;
 }
 
 .about__cont_foto {
@@ -30,11 +31,15 @@
 	height: 142px;
 	width: 140px;
 	border-radius: 50% 50%;
-	background: url(../img/foto.jpg);
-	background-size: cover;
-    background-position: 0 -28px;
+	// background: url(../img/foto.jpg);
+	// background-size: cover;
+ //    background-position: 0 -28px;
 	margin: 0 auto;
 	position: relative;
+	overflow: hidden;
+	img {
+		width: 100%;
+	}
 }
 
 .about__name {

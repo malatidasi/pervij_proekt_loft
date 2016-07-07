@@ -3,20 +3,22 @@
 	font-size: 0px;
 	box-sizing: border-box;
 	position: relative;
+	display: table;
 }
 
 
 .p_aboutInfo_item {
 	width: 50%;
-	display: inline-block;
+	display: table-cell;
 	height: 100%;	
 	font-size: 0px;
 	box-sizing: border-box;
+
 }
 
 .p_aboutInfo-text {
 	background-color: #ebefe2;
-	float: left;
+	// float: left;
 	padding-right: 20px;	
 	height: 100%;
 }

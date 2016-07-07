@@ -1,0 +1,85 @@
+.login {
+	height: 430px;
+}
+
+.login__block {
+	width: 340px;
+	margin: 35px auto 25px;
+
+}
+
+.login__title {
+	@include fonts(35px, 'Webissimo-Regular');
+	text-transform: uppercase;
+}
+.login__line {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.login__boxCheckbox {
+	margin: auto;
+	width: 110px;
+	margin-bottom: 15px;
+}
+
+
+.login__checkbox {
+	background: url(../img/checkbox.png);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+
+
+.login__checkboxText {
+	margin-left: 5px;
+	@include fonts(16px, 'Roboto-Regular');
+	display: inline-block;
+	vertical-align: top;
+}
+
+.login__boxRadio {
+	text-align: center;
+}
+
+.login__boxRadioItem {
+	display: inline-block;
+}
+
+.login__boxRadioTitle {
+	@include fonts(18px, 'Roboto-Bold');
+}
+
+.login__radio {
+	background: url(../img/radio.png);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+
+.login__checkbox-checked {
+	background-position: 0 -20px;
+}
+
+
+.login__radioCheckedText {
+	color: #6c9c5a;
+}
+
+.login__boxRadioTitle {
+	margin-bottom: 15px;
+}
+
+.login__boxRadioItem-marLeft {
+	margin-left: 40px;
+}
+
+.nav__login {
+	width: 50%;
+}
+.nav__login-borderLeft {
+	border-left: solid 2px #92b08f;
+}

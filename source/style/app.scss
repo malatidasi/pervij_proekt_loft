@@ -22,7 +22,7 @@ body {
   background-size: cover;
 }
 
- 
+
 
 @import 'gori';
 
@@ -66,4 +66,12 @@ body {
 
 .wrapper, footer, .wrapper_com {
   display: none;
+}
+
+//avtorizacii plashka
+@import 'common/login'; 
+
+input,
+textarea {
+    outline:none;
 }
